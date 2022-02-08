@@ -13,7 +13,7 @@ public class Network {
         int lastLayerNeuronCount = inputNeuronCount;
 
         for (Integer count : internalLayerNeuronCount) {
-            this.layerList.add(new Layer(inputNeuronCount, false, lastLayerNeuronCount));
+            this.layerList.add(new Layer(count, false, lastLayerNeuronCount));
 
             lastLayerNeuronCount = count;
         }
