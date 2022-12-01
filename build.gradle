@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files("libs/core.jar")
+    implementation "io.projectreactor:reactor-core:3.4.17"
+    implementation "com.google.code.gson:gson:2.9.0"
+}
